@@ -1,0 +1,23 @@
+[project]
+name = "agent-monitoring-with-agent365"
+version = "0.1.0"
+description = "Integration Agent Framework and Agent 365 extending Agent with monitoring and plug-ins"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agent-framework>=1.0.0b251218",
+    "microsoft-agents-a365-notifications>=0.1.0",
+    "microsoft-agents-a365-observability-core>=0.1.0",
+    "microsoft-agents-a365-observability-extensions-agent-framework>=0.1.0",
+    "microsoft-agents-a365-runtime>=0.1.0",
+    "microsoft-agents-a365-tooling>=0.1.0",
+    "microsoft-agents-a365-tooling-extensions-agentframework>=0.1.0",
+    "python-dotenv>=1.2.1",
+    "pydantic>=2.10.4",
+    "aiohttp>=3.11.11",
+    "azure-identity>=1.19.0",
+    "microsoft-agents-m365copilot-core>=1.0.0",
+    "microsoft-agents-hosting-aiohttp>=0.5.3",
+    "microsoft-agents-authentication-msal>=0.5.3",
+    "microsoft-agents-activity>=0.5.3",
+]
