@@ -3,7 +3,7 @@
 Refactored <u>[Agent 365 with Microsoft Agent Framework sample](](https://github.com/microsoft/Agent365-Samples))</u>.
 
 > [!NOTE]  
-> The application was unable to complete setup or perform tool calling through MCP due to a permissions issue.  
+> I was unable to complete the setup or perform tool calls through MCP due to my permissions issue. This application is a refactored version of the sample code, focusing on core functionality with more clearer naming.  
 > Agent 365 is currently in **preview/early access, not GA, as of Dec 2025**.
 
 ## Features
@@ -15,6 +15,8 @@ Refactored <u>[Agent 365 with Microsoft Agent Framework sample](](https://github
     2. Production mode: Full authentication when credentials provided.
 
 ## Screenshot
+
+Anonymous mode without Agent 365 — OpenAI LLM Chat in Agents Playground
 
 ![agent-playground](./docs/agent-playground.png)
 
