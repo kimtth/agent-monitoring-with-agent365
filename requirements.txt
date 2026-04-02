@@ -13,7 +13,7 @@ agent-framework-openai==1.0.0rc6
     # via agent-framework-azure-ai
 aiohappyeyeballs==2.6.1
     # via aiohttp
-aiohttp==3.13.3
+aiohttp==3.13.4
     # via
     #   agent-framework-azure-ai
     #   agent-monitoring-with-agent365
