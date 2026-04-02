@@ -1,0 +1,46 @@
+[project]
+name = "agent-monitoring-with-agent365"
+version = "0.1.0"
+description = "Integration Agent Framework and Agent 365 extending Agent with monitoring and plug-ins"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    # AgentFramework SDK - pin to rc6 (renamed ChatAgent → RawAgent, chat_client → client)
+    "agent-framework-azure-ai>=1.0.0rc6",
+    "agent-framework-core>=1.0.0rc6",
+
+    # Azure AI Projects - explicitly require pre-release version
+    "azure-ai-agents>=1.2.0b5",
+    "azure-ai-projects>=2.0.0b2",
+
+    # Microsoft Agents SDK - Official packages for hosting and integration
+    "microsoft-agents-hosting-aiohttp>=0.5.3",
+    "microsoft-agents-hosting-core>=0.5.3",
+    "microsoft-agents-authentication-msal>=0.5.3",
+    "microsoft-agents-activity>=0.5.3",
+
+    # Azure SDK components
+    "azure-identity",
+
+    # Core dependencies
+    "python-dotenv",
+    "aiohttp",
+
+    # Data validation
+    "pydantic>=2.0.0",
+
+    # Microsoft Agent 365 SDK packages
+    "microsoft-agents-a365-tooling>=0.1.0",
+    "microsoft-agents-a365-tooling-extensions-agentframework>=0.1.0",
+    "microsoft-agents-a365-observability-core>=0.1.0",
+    "microsoft-agents-a365-observability-extensions-agent-framework>=0.1.0",
+    "microsoft-agents-a365-runtime>=0.1.0",
+    "microsoft-agents-a365-notifications>=0.1.0",
+]
+
+[tool.uv]
+prerelease = "allow"
+
+[tool.setuptools]
+packages = ["modules"]
+py-modules = ["main"]
